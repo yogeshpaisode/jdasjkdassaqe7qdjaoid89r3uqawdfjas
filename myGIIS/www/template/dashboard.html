@@ -1,0 +1,205 @@
+<section>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" data-target="#mails" aria-expanded="false" aria-controls="mails">
+            <div class="panel-heading" role="tab">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        Mails
+                    </div>
+                    <div class="col-sm-6 col-xs-6 text-right">
+                        <i class="material-icons collapseIcon">email</i>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="mails">
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr ng-click="loadMails()">
+                                <td>New Fees Detail for student..<br>24 March 2016</td>
+                                <td class="text-right">IT A</td>
+                            </tr>
+                            <tr ng-click="loadMails()">
+                                <td>Exam Time Table for class..<br>28 March 2016</td>
+                                <td class="text-right">IT B</td>
+                            </tr>
+                            <tr ng-click="loadMails()">
+                                <td>Sport Detail on this..<br>3 April 2016</td>
+                                <td class="text-right">IT C</td>
+                            </tr>
+                            <tr ng-click="loadMails()">
+                                <td>Fees Detail for class all Students<br>5 April 2016</td>
+                                <td class="text-right">IT D</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!--End of Mails Panel-->
+
+        <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" data-target="#worksheets" aria-expanded="false" aria-controls="worksheets">
+            <div class="panel-heading" role="tab">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 ">
+                        Worksheets
+                    </div>
+                    <div class="col-sm-6 col-xs-6 text-right">
+                        <i class="material-icons collapseIcon">library_books</i>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="worksheets">
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr ng-click="loadWorksheets()">
+                                <td>Worksheets for class A..<br />21 March 2016</td>
+                                <td class="text-right">Class A</td>
+                            </tr>
+                            <tr ng-click="loadWorksheets()">
+                                <td>Worksheets for class B..<br />25 March 2016</td>
+                                <td class="text-right">Class B</td>
+                            </tr>
+                            <tr ng-click="loadWorksheets()">
+                                <td>Worksheets for class C..<br />28 March 2016</td>
+                                <td class="text-right">Class C</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!--End of Worksheets Panel-->
+
+        <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" data-target="#Assignments" aria-expanded="false" aria-controls="Assignments">
+            <div class="panel-heading" role="tab">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 ">
+                        Assignments
+                    </div>
+                    <div class="col-sm-6 col-xs-6 text-right">
+                        <i class="material-icons collapseIcon">assignment</i>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="Assignments">
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr ng-click="loadAssignment()">
+                                <td>Global Warming Note detail...<br />21 March 2016</td>
+                                <td class="text-right">Class B</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!--End of Assignments Panel-->
+
+        <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" data-target="#Invoices" aria-expanded="false" aria-controls="Invoices">
+            <div class="panel-heading" role="tab">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 ">
+                        Invoices
+                    </div>
+                    <div class="col-sm-6 col-xs-6 text-right">
+                        <i class="material-icons collapseIcon">receipt</i>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="Invoices">
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td>Bookshop</td>
+                                <td>Paid</td>
+                                <td class="text-right">Yogesh Paisode<br />21 March 2016</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!--End of Invoices Panel-->
+
+        <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" data-target="#Announcements" aria-expanded="false" aria-controls="Announcements">
+            <div class="panel-heading" role="tab">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6 ">
+                        Announcements
+                    </div>
+                    <div class="col-sm-6 col-xs-6 text-right">
+                        <i class="material-icons collapseIcon">receipt</i>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="Announcements">
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr ng-click="loadAnnouncement();">
+                                <td>Parent Meet of the Year 2016<br />21 March 2016</td>
+                                <td>Class B IV</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!--End of Invoices Panel-->
+
+    </div><!--End of /#accordation-->
+</section>
+
+<section class="row">
+    <div class="col-sm-6 col-xs-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-6">
+                                <h4>Achievements</h4>
+                            </div><!--End of left Title-->
+                            <div class="col-sm-6 col-xs-6 text-right">
+                                <h4><a href="#achievements">View All</a></h4>
+                            </div><!--End of Right Title-->
+                        </div><!--End of main row-->
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><h4>Rahul SIngh<br /><small>In the final year of school test must be requested to be fill</small></h4></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div><!--End of Achievements-->
+    <div class="col-sm-6 col-xs-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-6">
+                                <h4>Compliments</h4>
+                            </div><!--End of left Title-->
+                            <div class="col-sm-6 col-xs-6 text-right">
+                                <h4><a href="#compliments">View All</a></h4>
+                            </div><!--End of Right Title-->
+                        </div><!--End of main row-->
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><h4>Rahul SIngh<br /><small>In the final year of school test must be requested to be fill</small></h4></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div><!--End of Achievements-->
+
+</section>

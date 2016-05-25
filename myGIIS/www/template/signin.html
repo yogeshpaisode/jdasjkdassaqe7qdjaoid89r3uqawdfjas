@@ -1,0 +1,91 @@
+﻿<link rel="stylesheet" href="css/singinStyle.css" />
+<section class="container" ng-click="removeFocus();" ng-init="initCampuses();">
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="width:100%;">
+        <div class="login_listGroup">
+
+            <ul class="list-group" style="margin-bottom:1px;">
+                <li class="list-group-item" style="border-bottom-style:none;margin-bottom:0px;">
+                    <div class="text-center login_Heading">
+                        <b><img src="img/myGIIS_LOGO.png" />&nbsp;GLOBAL SCHOOL</b>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group" style="margin-bottom:1px;margin-top:1px">
+                <li class="list-group-item" style="border-bottom-style:none;margin-bottom:0px;">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-4">
+                            <b>Setting</b>
+                        </div>
+                        <div class="col-sm-8 col-xs-8 text-right">
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item" style="margin-top:0px;">
+                    <div style="margin-top:5px;">
+                        <md-checkbox aria-label="Remember Me" class="md-primary">
+                            Remember Me
+                        </md-checkbox>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="list-group" style="margin-top:1px">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-4">
+                            <b>User Name</b>
+                        </div>
+                        <div class="col-sm-8 col-xs-8">
+                            <input type="text" placeholder="User Name" class="login_input" />
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item" style="border-bottom-style:none;border-top-style:none;margin-top:1px;margin-bottom:0px;">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-4">
+                            <b>Password</b>
+                        </div>
+                        <div class="col-sm-8 col-xs-8">
+                            <input type="password" placeholder="Password" class="login_input" />
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item" style="margin-top:0px;">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-4">
+                            <b>Campus</b>
+                        </div>
+                        <div class="col-sm-8 col-xs-8">
+                            <select style="width:100%;background-color:transparent;border-color:transparent;">
+                                <option>Select Campus</option>
+                                <option ng-repeat="campus in campusesList" value="campus.name">{{campus.name}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item" style="margin-top:0px;">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-4">
+                            <b>Organization</b>
+                        </div>
+                        <div class="col-sm-8 col-xs-8">
+                            <md-radio-group ng-model="activeOrganization">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6" ng-repeat="organization in response_CampusList">
+                                        <md-radio-button value="{{organization.name}}" class="md-primary" ng-click="loadCampuses($index)">{{organization.name}}</md-radio-button>
+                                    </div>
+                                </div>
+                            </md-radio-group>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="signInButton" ng-click="doLogin();"><div class="mdl-spinner mdl-js-spinner is-active"></div><div id="signInButtonText">Sign in</div></button>
+            <div class="text-right" style="margin-top:20px; margin-bottom:30px;text-decoration:underline;">
+                <a>Forgot Password ??</a>
+            </div>
+        </div><!--List group-->
+    </div><!--End of Card-->
+</section><!--End of Container Section-->

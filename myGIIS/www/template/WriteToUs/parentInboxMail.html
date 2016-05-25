@@ -1,0 +1,100 @@
+﻿<section class="row">
+
+    <div class="col-sm-2 col-xs-2">
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+            <i class="material-icons">clear</i>
+        </button>
+    </div>
+
+    <div class="col-sm-7 col-xs-5 text-center">
+        <h4>Inbox (Parent)</h4>
+    </div>
+
+    <div class="col-sm-3 col-xs-5 text-right">
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" ng-click="announceClick();">
+            <i class="material-icons">attach_file</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+            <i class="material-icons">delete_forever</i>
+        </button>
+        <md-menu>
+            <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" ng-click="$mdOpenMenu($event)">
+                <i class="material-icons">more_vert</i>
+            </button>
+            <md-menu-content width="2" style="padding:0px;">
+                <md-menu-item>
+                    <md-button>
+                        <i class="material-icons">reply</i>&nbsp;&nbsp;Replay
+                    </md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button>
+                        <i class="material-icons">forward</i>&nbsp;&nbsp;Forward
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+    </div>
+
+</section><!--Header Section-->
+
+<section style="margin:3px;">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-1 col-xs-2">
+                    From:
+                </div><!--End of ./col-->
+                <div class="col-sm-11 col-xs-10">
+                    It Support
+                </div><!--End of ./col-->
+            </div><!--End of ./row-->
+        </li>
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-1 col-xs-2">
+                    To:
+                </div><!--End of ./col-->
+                <div class="col-sm-11 col-xs-10">
+                    Esther Simon
+                </div><!--End of ./col-->
+            </div><!--End of ./row-->
+        </li>
+
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-1 col-xs-2">
+                    Cc:
+                </div><!--End of ./col-->
+                <div class="col-sm-11 col-xs-10">
+                    <input type="text" class="writeToUs_TextField" />
+                </div><!--End of ./col-->
+            </div><!--End of ./row-->
+        </li>
+
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-1 col-xs-2">
+                    Subject:
+                </div><!--End of ./col-->
+                <div class="col-sm-11 col-xs-10">
+                    <b>Dummy Student is transferred from IGCSE 8A to IGCSE 8Z</b>
+                </div><!--End of ./col-->
+            </div><!--End of ./row-->
+        </li>
+
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    Message:
+                </div><!--End of ./col-->
+                <div class="col-sm-12 col-xs-12">
+                    Dear Esther Simon,<br /><br />
+                    This is to inform you that Dummy Student is transferred from <br />IGCSE 8A to IGCSE 8Z.<br /><br />
+                    Regards,<br />
+                    Global Indian International School
+                </div><!--End of ./col-->
+            </div><!--End of ./row-->
+        </li>
+    </ul>
+</section>

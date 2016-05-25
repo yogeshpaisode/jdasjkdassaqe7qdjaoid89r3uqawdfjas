@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http: data: gap: https://ssl.gstatic.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="css/angular-material.min.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/material.indigo-pink.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/homeStyle.css">
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-aria.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="js/angular-material.min.js"></script>
+    <script defer src="js/material.min.js"></script>
+
+    <script type="text/javascript" src="js/ng-cordova.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
+
+    <script src="scripts/mainModule.js"></script>
+
+    <script src="scripts/subModule.js"></script>
+    <script src="scripts/routeConfig.js"></script>
+    <script src="scripts/run.js"></script>
+    <script src="scripts/constantValues.js"></script>
+    <script src="scripts/services.js"></script>
+
+    <script src="scripts/indexCtr.js"></script>
+    <script src="template/signinCtr.js"></script>
+    <script src="template/homeCtr.js"></script>
+    <script src="template/dashboardCtr.js"></script>
+    <script src="template/WriteToUs/inboxParentListCtr.js"></script>
+    <script src="template/WriteToUs/sentMailListCtr.js"></script>
+    <script src="template/WriteToUs/replyMailCtr.js"></script>
+    <script src="template/WriteToUs/forwardMailCtr.js"></script>
+    <script src="template/WriteToUs/writeToTeacherCtr.js"></script>
+    <script src="template/WriteToUs/emailStaffCtr.js"></script>
+    <script src="template/WriteToUs/emailAdminCtr.js"></script>
+    <script src="template/WriteToUs/inboxChildListCtr.js"></script>
+    <script src="template/WriteToUs/parentInboxMailCtr.js"></script>
+    <script src="template/WriteToUs/postChildsAchievementCtr.js"></script>
+    <script src="template/WriteToUs/postComplimentCtr.js"></script>
+    <script src="template/WriteToUs/postFeedbackCtr.js"></script>
+    <script src="template/WriteToUs/childsAchievementListCtr.js"></script>
+    <script src="template/profile/viewProfile.js"></script>
+    <script src="template/profile/editLoginInfo.js"></script>
+    <script src="template/profile/feedback.js"></script>
+</head>
+<body ng-app="myGIIS" ng-controller="indexController" ng-cloak="" md-swipe-right="onSwipeRight()" md-swipe-left="onSwipeLeft()">
+    <div ui-view="" style="overflow-x:hidden;"></div>
+
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-swipe-left="onSwipeLeft()">
+        <md-content style="overflow:hidden;">
+            <div class="row" ng-class="panelClass">
+                <section class="col-xs-3 col-sm-3 nopadding panel_LeftMenuIcon">
+
+                    <div class="panelItem">
+					<div>
+                        <button class="panel_LeftMenuIcon_Button" ng-click="changePanelActiveItem('profile');">
+                            <i class="fa fa-user fa-3x"></i>
+                            <small>Profile</small>
+                        </button><!-- end of Profile-->
+
+                        <button class="panel_LeftMenuIcon_Button" ng-click="changeState('home.dashboard');">
+                            <i class="fa fa-home fa-3x"></i>
+                            <small>Home</small>
+                        </button><!--end of Home-->
+
+                        <button class="panel_LeftMenuIcon_Button" ng-click="changePanelActiveItem('school');">
+                            <i class="fa fa-university fa-3x"></i>
+                            <small>School</small>
+                        </button><!--end of School-->
+
+                        <button class="panel_LeftMenuIcon_Button" ng-click="changePanelActiveItem('academic');">
+                            <i class="fa fa-graduation-cap fa-3x"></i>
+                            <small>Academic</small>
+                        </button><!--end of Academic-->
+
+                        <button class="panel_LeftMenuIcon_Button" ng-click="changePanelActiveItem('media');">
+                            <i class="fa fa-volume-up fa-3x"></i>
+                            <small>Media</small>
+                        </button><!--end of Media-->
+
+                        <button class="panel_LeftMenuIcon_Button" ng-click="changePanelActiveItem('writeToUs');">
+                            <i class="fa fa-envelope fa-3x"></i>
+                            <small>Write To Us</small>
+                        </button><!--end of Write To Us-->
+					</div>
+					
+					<div id="bottomMenuIcons">
+                        <button class="panel_LeftMenuIcon_Button">
+                            <i class="fa fa-calendar fa-3x"></i>
+                            <small>Calender</small>
+                        </button><!--end of Calender-->
+
+                        <button class="panel_LeftMenuIcon_Button">
+                            <i class="fa fa-clock-o fa-3x"></i>
+                            <small>Time Table</small>
+                        </button><!--end of Time Table-->
+
+                        <button class="panel_LeftMenuIcon_Button">
+                            <i class="fa fa-bus fa-3x"></i>
+                            <small>Bus</small>
+                        </button><!--end of Bus-->
+
+                        <button class="panel_LeftMenuIcon_Button">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                            <small>Directory</small>
+                        </button><!--end of Directory-->
+
+                        <button class="panel_LeftMenuIcon_Button">
+                            <i class="fa fa-sign-out fa-3x"></i>
+                            <small>Logout</small>
+                        </button><!--end of Logout-->
+					</div>	
+                    </div>
+
+                </section><!--End of left menu ICon-->
+
+                <section class="col-xs-9 col-sm-9 nopadding">
+                    <div class="panelItem" style="margin-left:7px;width:100%;" ng-include="activePanelItem">
+                    </div><!--End of div-->
+                </section><!--End of left menu Icon-->
+
+            </div><!--End of Row-->
+        </md-content>
+    </md-sidenav>
+
+</body>
+</html>

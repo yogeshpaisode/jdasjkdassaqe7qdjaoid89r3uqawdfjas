@@ -1,0 +1,81 @@
+﻿<section class="row">
+
+    <div class="col-sm-2 col-xs-1">
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+            <i class="material-icons">clear</i>
+        </button>
+    </div>
+
+    <div class="col-sm-8 col-xs-9">
+        <h4 style="padding-left:5px;">Post Your Compliment</h4>
+    </div>
+
+    <div class="col-sm-2 col-xs-2 text-right">
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+            <i class="material-icons">send</i>
+        </button>
+        &nbsp;
+    </div>
+
+</section><!--Header Section-->
+
+<section style="margin:3px;">
+    <div class="row">
+        <div class="col-xs-offset-5 col-sm-offset-8 col-xs-7 col-sm-4">
+            <md-select ng-model="child" style="margin-bottom:2px;margin-top:-3px;">
+                <md-option>
+                    Select Child Reference
+                </md-option>
+                <md-option>
+                    Child 1
+                </md-option>
+                <md-option>
+                    Child 2
+                </md-option>
+                <md-option>
+                    Child 3
+                </md-option>
+            </md-select>
+        </div>
+    </div><!--End of child Reference-->
+    <ul class="list-group">
+
+
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-3 col-xs-3">
+                    Video Link:
+                </div><!--End of ./col-->
+                <div class="col-sm-10 col-xs-9">
+                    <input type="text" class="writeToUs_TextField" />
+                </div><!--End of ./col-->
+            </div><!--End of ./row-->
+        </li>
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <h4>Note: <small>Enter Achievement <br />(Max length: 500 Characters)</small></h4>
+                </div><!--End of ./col-->
+            </div><!--End of ./row-->
+        </li>
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <textarea class="writeToUs_TextField" rows="5"></textarea>
+                </div><!--End of ./col-->
+            </div><!--End of ./row-->
+        </li>
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-sm-6 col-xs-6" ng-click="addImage();">
+                    <img src="img/NoImageAvailable.png" style="width:150px;height:170px;" id="preView" />
+                </div><!--End of ./col-->
+                <div class="col-sm-6 col-xs-6">
+                    <img src="img/imgNoteSectingImage.png" style="width:100%;" />
+                </div><!--End of ./col-->
+            </div><!--End of ./row-->
+        </li>
+    </ul>
+</section>
+
+<input type="file" id="attachedFile" style="display:none">

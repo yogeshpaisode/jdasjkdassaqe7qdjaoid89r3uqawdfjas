@@ -1,0 +1,52 @@
+﻿<section class="templateContainer" ng-cloak="" ng-init="fetchMailList();">
+    <div>
+        <h3>Inbox (Child)</h3>
+    </div>
+
+    <div ng-show="gotIssue" style="background-color:rgb(255,87,34);color: rgb(255,255,255);font-size: 20px;">
+        <div class="row">
+            <div class="col-sm-1 col-xs-2">
+                <i class="material-icons" style="font-size:40px;margin-left:7px;margin-top:5px;">report_problem</i>
+            </div><!--end of ./col-->
+            <div class="col-sm-11 col-xs-10">
+                Something went wrong..<br />
+                <small>Retrying in {{showTimeOutCount}} sec</small>
+            </div><!--end of ./col-->
+        </div><!--end of ./row-->
+    </div>
+
+    <div>
+
+        <div class="row nopadding" style="border-bottom-color:lightgray;border-bottom:1px solid;" ng-repeat="mail in inboxMailList" ng-click="loadParentInbox();">
+            <div class="col-sm-9 col-xs-9 nopadding">
+                <div style="margin-left:2px;">
+                    <h4>{{mail.subject}}</h4>
+                    {{mail.senderName}}
+                    -
+                    {{mail.date}}
+                </div>
+            </div>
+            <div class="col-sm-1 col-xs-1 nopadding">
+                <a class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" href="#/home/replyMail">
+                    <i class="material-icons">reply</i>
+                </a>
+            </div>
+            <div class="col-sm-1 col-xs-1 nopadding">
+                <a class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" href="#/home/forwardMail">
+                    <i class="material-icons">forward</i>
+                </a>
+            </div>
+            <div class="col-sm-1 col-xs-1 nopadding">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                    <i class="material-icons">delete</i>
+                </button>
+            </div>
+        </div><!--End of Row-->
+
+        <div class="text-center" style="margin:100px;" ng-show="fetchingIsInProgress">
+            <div class="mdl-spinner mdl-js-spinner is-active"></div>
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,166 @@
+﻿body {
+    background-image: url(../img/login_Backgroung.png);
+    background-repeat: repeat;
+}
+
+.signInButton {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.33);
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul li {
+    margin-left: 0px;
+}
+
+.login_input {
+    width: 100%;
+    border-style: none;
+}
+
+button, select, textarea, input {
+    outline: none;
+}
+
+.signInButton {
+    background-color: #fff;
+}
+
+.container {
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login_listGroup {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.login_Heading {
+    color: indianred;
+    font-size: 30px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.login_Subheading {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container {
+        padding-right: 135px;
+        padding-left: 135px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .login_Card_Ipad {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .login_Heading {
+        color: indianred;
+        font-size: 32px;
+        margin: 20px;
+        margin-bottom: 10px;
+    }
+
+    .login_Subheading {
+        font-size: 22px;
+        margin-bottom: 35px;
+        margin-top: 10px;
+    }
+
+    .login_listGroup {
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 380px) {
+    .mdl-card {
+        background-color: transparent;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .signInButton {
+        background-color: #fff;
+    }
+
+    .container {
+        padding-right: 2px;
+        padding-left: 2px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
+    .login_listGroup {
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .login_Heading {
+        color: indianred;
+        font-size: 30px;
+        margin: 5px;
+        margin-bottom: 5px;
+    }
+
+    .login_Subheading {
+        font-size: 18px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+}
+
+
+@media (min-width: 550px) and (max-width: 650px) {
+    .mdl-card {
+        background-color: transparent;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .signInButton {
+        background-color: #fff;
+    }
+
+    .container {
+        padding-right: 120px;
+        padding-left: 120px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .login_listGroup {
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .login_Heading {
+        color: indianred;
+        font-size: 30px;
+        margin: 5px;
+        margin-bottom: 5px;
+    }
+
+    .login_Subheading {
+        font-size: 18px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+}

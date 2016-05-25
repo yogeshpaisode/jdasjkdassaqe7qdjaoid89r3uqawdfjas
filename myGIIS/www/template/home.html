@@ -1,0 +1,15 @@
+﻿<section ng-init="init();">
+    <md-toolbar class="md-primary" style="z-index:5;position:fixed;">
+        <div class="md-toolbar-tools" style="padding:0px;">
+            <button ng-click="openLeftMenu()" class="btn headerMenuButton" style="outline:none;"><i class="material-icons">menu</i></button>
+            &nbsp;
+            <img src="img/iGIISLogo.png" />
+            <span flex></span>
+            <div style="padding-right:5px;padding-top:2px;">
+                <button class="btn headerMenuButton" style="outline:none;"><i class="material-icons">account_circle</i></button>
+            </div>
+        </div>
+    </md-toolbar>
+</section><!--End of Header Section-->
+
+<div ui-view="" id="bodyView"></div><!--End of ui-view div-->
