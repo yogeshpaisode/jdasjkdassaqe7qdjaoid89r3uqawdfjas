@@ -5,7 +5,7 @@
     $("#get").click(function () {
         alert("ok");
     });
-});
+}); 
 //Function to adjust screen for different viewport 
 var adjustView = function () {
     var body = $("body").height();
