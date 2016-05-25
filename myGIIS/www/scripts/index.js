@@ -1,6 +1,4 @@
-//Congo
-
-$(document).ready(function () {
+﻿$(document).ready(function () {
     $("body").click(function () {
         $("input,textarea").blur();                     //Handle keyboard control
     });
